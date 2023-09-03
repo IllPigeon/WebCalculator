@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" charset="utf-8">
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <!--
+            1.) Create a textbox or something like that
+            2.) Number button on press, show pressed number in field
+            3.) Should be Number, operation, number, equals
+                a.)Keeps current number displayed until equals is pressed
+                b.)equals displays final result
+                c.)Store result number as first number for reuse of operations
+            4.)Maybe use flags for button presses, flag signals what
+                calculation equals does first
+            Other:
+                *Operations should have a color change on press
+                *Maybe day/night theme toggle
+                    *Create a 
+                *Select a good math-y font for calculator
+                *Maybe allow for number presses
+        -->
+        <div class = "calculator">
+            <input type="text" id="display" value="">
+            <!--Buttons go here-->
+            <div class = "keys">
+                <button class="a-clr" data-type="a-clear">AC</button>
+                <button class = "del" data-type="delete">C</button>
+                <button class = "sqrt" data-type="sqrt">√</button>
+                <button class = "pow" data-type="pow">x^y</button>
+                <button class = "sin" data-type="sin">sin</button>
+                <button class = "cos" data-type="cos">cos</button>
+                <button class = "tan" data-type="tan">tan</button>
+                <button class="9" data-type="num">9</button>
+                <button class="5" data-type="num">5</button>
+                <button class="6" data-type="num">6</button>
+                <button class="7" data-type="num">7</button>
+                <button class="8" data-type="num">8</button>
+                <button class="1" data-type="num">1</button>
+                <button class="2" data-type="num">2</button>
+                <button class="3" data-type="num">3</button>
+                <button class="4" data-type="num">4</button>
+                <button class="0" data-type="num">0</button>
+                <button class ="dec" data-type = "dec">.</button>
+                <button class="add" data-type="add">+</button>
+                <button class="sub" data-type="sub">-</button>
+                <button class="mul" data-type="mul">×</button>
+                <button class="div" data-type="div">÷</button>
+                <button class="equ" data-type="equ">=</button>
+            </div>
+        </div>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
